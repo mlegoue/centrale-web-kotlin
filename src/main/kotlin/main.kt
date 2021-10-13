@@ -2,12 +2,16 @@ fun main() {
 
     val marie = User("Marie", "Le Goué", "marie@test.com", "testtest", 22);
     val foder = User("François", "Oder", "foder@test.com", "testtest", 21);
+    val lucie = User("Lucie", "Danard", "lucie@test.fr", "testtest", 22);
+    val pilouf = User("Alexandre", "Menasria", "pilouf@test.fr", "testtest", 23);
 
     marie.introduce();
     foder.introduce();
 
     val friendship = Friendship(marie, foder);
-    friendship.show();
+    val friendship2 = Friendship(marie, lucie);
+
+    marie.showFriends();
 
     val message = TextMessage(marie, foder, "Coucou");
     message.show();
