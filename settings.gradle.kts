@@ -1,3 +1,1 @@
-
-rootProject.name = "cours-kotlin"
-
+rootProject.name = "facebook"
